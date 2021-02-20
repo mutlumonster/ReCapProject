@@ -1,11 +1,15 @@
-﻿using DataAccess.Concrete.EntityFramework;
+﻿using DataAccess.Abstract.EntityFramework;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace DataAccess.Abstract
 {
-    public class ICarDal : IEntityRepository
+    public interface ICarDal : IEntityRepository<Car>
     {
+        
     }
 }

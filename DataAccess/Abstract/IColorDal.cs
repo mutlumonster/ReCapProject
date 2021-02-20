@@ -1,11 +1,13 @@
-﻿using DataAccess.Concrete.EntityFramework;
+﻿using DataAccess.Abstract.EntityFramework;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq.Expressions;
 
 namespace DataAccess.Abstract
 {
-    public class IColorDal : IEntityRepository
+    public interface IColorDal : IEntityRepository<Color>
     {
+      
     }
 }

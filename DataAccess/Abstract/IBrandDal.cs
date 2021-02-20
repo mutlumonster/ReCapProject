@@ -1,11 +1,15 @@
-﻿using DataAccess.Concrete.EntityFramework;
+﻿using DataAccess.Abstract.EntityFramework;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public class IBrandDal : IEntityRepository
+    public interface IBrandDal : IEntityRepository<Brand>
     {
+        
     }
 }

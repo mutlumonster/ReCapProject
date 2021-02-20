@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataAccess
+namespace Business.Abstract
 {
-    class Class1
+    public interface IColorService
     {
     }
 }
