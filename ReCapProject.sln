@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Busine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{575DC5D5-F07F-4EC4-A22A-A922DFEFE2E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{20568760-C36D-4C87-A0D9-29DEC955A3F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{FF53B61D-9C73-4444-88E8-D6B595F04BC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{575DC5D5-F07F-4EC4-A22A-A922DFEFE2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{575DC5D5-F07F-4EC4-A22A-A922DFEFE2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{575DC5D5-F07F-4EC4-A22A-A922DFEFE2E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20568760-C36D-4C87-A0D9-29DEC955A3F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20568760-C36D-4C87-A0D9-29DEC955A3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20568760-C36D-4C87-A0D9-29DEC955A3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20568760-C36D-4C87-A0D9-29DEC955A3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF53B61D-9C73-4444-88E8-D6B595F04BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF53B61D-9C73-4444-88E8-D6B595F04BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF53B61D-9C73-4444-88E8-D6B595F04BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF53B61D-9C73-4444-88E8-D6B595F04BC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
