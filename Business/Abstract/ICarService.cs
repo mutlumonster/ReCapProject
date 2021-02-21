@@ -1,4 +1,5 @@
 ﻿using Entities.Concrete;
+using Entities.DTOs;
 using System.Collections.Generic;
 
 namespace Business.Abstract
@@ -13,6 +14,7 @@ namespace Business.Abstract
         List<Car> GetCarsByBrandId(int brandId);
         List<Car> GetCarsByColorId(int colorId);
         List<Car> GetCarsByDailyPrice(decimal minDailyPrice, decimal maxDailyPrice);
+        List<CarDetailDto> GetCarDetails();
 
 
         //GetCarsByBrandId , GetCarsByColorId servislerini yazınız.
