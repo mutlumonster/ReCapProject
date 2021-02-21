@@ -1,16 +1,13 @@
 ﻿using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class HomeworkContext :DbContext
+    public class HomeworkContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=PC\SQL;Database=Homework;Trusted_connection=true");   
+            optionsBuilder.UseSqlServer(@"Server=PC\SQL;Database=Homework;Trusted_connection=true");
         }
         public DbSet<Car> Cars { get; set; }
         public DbSet<Brand> Brands { get; set; }
