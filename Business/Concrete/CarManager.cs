@@ -21,12 +21,17 @@ namespace Business.Concrete
         {
             _carDal.Add(car);
 
-            //return new Result(true,"Islem Basarili");
-            //return new Result("Islem Basarili");
+            if (1==2)
+            {
+                return new ErrorResult("Hatali islem");
+            }
+
+
             return new Result(true,"Islem Basarili");
-            new Result(false);
-            //return new Result(true, "Islem Basarili");
+            
         }
+
+  
 
         public void Delete(Car car)
         {
