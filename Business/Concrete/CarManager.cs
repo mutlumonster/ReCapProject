@@ -1,10 +1,10 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Business.Concrete
 {
@@ -17,9 +17,15 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
-        public void Add(Car car)
+        public IResult Add(Car car)
         {
             _carDal.Add(car);
+
+            //return new Result(true,"Islem Basarili");
+            //return new Result("Islem Basarili");
+            return new Result(true,"Islem Basarili");
+            new Result(false);
+            //return new Result(true, "Islem Basarili");
         }
 
         public void Delete(Car car)
@@ -27,7 +33,7 @@ namespace Business.Concrete
             _carDal.Delete(car);
         }
 
-        public Car Get(int carId)
+        public Car GetById(int carId)
         {
             return _carDal.Get(c => c.Id == carId);
         }
@@ -66,5 +72,6 @@ namespace Business.Concrete
         {
             _carDal.Update(car);
         }
-    }
+
+       }
 }
