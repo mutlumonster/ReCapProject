@@ -5,6 +5,7 @@ using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
+using Business.Constants;
 
 namespace Business.Concrete
 {
@@ -23,12 +24,10 @@ namespace Business.Concrete
 
             if (1==2)
             {
-                return new ErrorResult("Hatali islem");
+                return new ErrorResult(Messages.ProductAdded);
             }
 
-
-            return new Result(true,"Islem Basarili");
-            
+            return new SuccessResult(Messages.ProductAdded);
         }
 
   
@@ -43,9 +42,9 @@ namespace Business.Concrete
             return _carDal.Get(c => c.Id == carId);
         }
 
-        public List<Car> GetAll()
+        public IDataResult<List<Car>> GetAll()
         {
-            return _carDal.GetAll();
+            return new DataResult( _carDal.GetAll());
         }
 
         public List<Car> GetAllCars()
